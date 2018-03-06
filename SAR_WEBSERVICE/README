@@ -1,0 +1,47 @@
+# SAR Flask API 
+==============================
+ 
+## For Setting up the Virtual Environment,run the following command
+
+ 1.sudo apt-get install python-pip
+
+ 2.sudo apt-get install python-setuptools
+
+ 3.sudo easy_install3 pip
+ 
+ 4.sudo pip install virtualenv
+
+ 5.pip install --upgrade setuptools
+
+ 6.virtualenv env
+
+ 7.source env/bin/activate
+
+Now you have Virtual environment for runnig  ur application.
+
+Then we need to clone our ComplianceCompedium code into env folder
+
+Step 1 : clone code into env folder 
+
+Step 2: move to ComplianceCompedium/SARWebService/Flask_API
+
+		2.1 : We need to create table and migrate the table into postgres
+
+		 		Step 1 :  python manage.py create_db
+
+		 		Step 2 :  python manage.py db init
+
+		 		Step 3 :  python manage.py db migrate
+
+Step 3 : To Install all dependencies 
+
+		3.1 : pip install -r requirements.txt 
+
+Step 4 : Then to run the Applciation 
+
+		4.1  : python manage.py runserver
+
+
+
+
+

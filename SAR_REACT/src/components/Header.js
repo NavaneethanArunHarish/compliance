@@ -8,7 +8,7 @@ import Img4 from '../assests/images/DPIAPIAManagementR14.jpg';
 import Img5 from '../assests/images/DPIAPIAManagementR11.jpg';
 import Img6 from '../assests/images/DPIAPIAManagementR12.jpg';
 import Img7 from '../assests/images/DPIAPIAManagementR17.jpg';
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'; gfgfgfgfgfgfgfgfg
 import { bindActionCreators } from 'redux';
 import { browserHistory } from 'react-router';
 import axios from 'axios';
@@ -25,7 +25,7 @@ class Header extends Component {
     super(props);
 
     this.state = {
-      userDetails:''
+      userDetails: ''
     }
     this.handleClick = this.handleClick.bind(this);
     this.logout = this.logout.bind(this);
@@ -38,7 +38,7 @@ class Header extends Component {
   }
 
 
-componentWillMount() {
+  componentWillMount() {
     userType = localStorage.getItem("userType");
     userId = localStorage.getItem("userId");
     var user = localStorage.getItem("user");
@@ -58,17 +58,17 @@ componentWillMount() {
   }
 
 
-logout() {
-  this.props.Action.logout(userId, this.logoutResponse);
-}
+  logout() {
+    this.props.Action.logout(userId, this.logoutResponse);
+  }
 
-logoutResponse(value) {
-  browserHistory.push('/');
-  localStorage.clear();
-}
+  logoutResponse(value) {
+    browserHistory.push('/');
+    localStorage.clear();
+  }
 
   render() {
-    console.log('bef render - -> ',this.state.userDetails);
+    console.log('bef render - -> ', this.state.userDetails);
     return (
 
       <div>
@@ -82,7 +82,7 @@ logoutResponse(value) {
 
 
               <ul className="nav navbar-nav navbar-right">
-                 <li>
+                <li>
                   <a href="javascript:;" className="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                     <img src={welcomeImg} alt="" />{this.state.userDetails.name}
                     <span className=" fa fa-angle-down"></span>
@@ -100,7 +100,7 @@ logoutResponse(value) {
                   </ul>
                 </li>
 
-             {/*      <li role="presentation" className="dropdown">
+                {/*      <li role="presentation" className="dropdown">
                   <a href="javascript:;" className="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                     <i className="fa fa-envelope-o"></i>
                     <span className="badge bg-green">6</span>
@@ -164,9 +164,9 @@ logoutResponse(value) {
                     </li>
                   </ul>
                 </li>*/}
-              </ul> 
-            
-              </nav>
+              </ul>
+
+            </nav>
           </div>
         </div>
       </div>
@@ -177,12 +177,12 @@ logoutResponse(value) {
 
 function mapStateToProps(state, ownProps) {
   return {
-      getUserSuccess: state.login.getUserSuccess
+    getUserSuccess: state.login.getUserSuccess
   };
 }
 function mapDispatchToProps(dispatch) {
   return {
-      Action: bindActionCreators(Action, dispatch)
+    Action: bindActionCreators(Action, dispatch)
   }
 }
 

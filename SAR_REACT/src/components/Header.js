@@ -8,7 +8,7 @@ import Img4 from '../assests/images/DPIAPIAManagementR14.jpg';
 import Img5 from '../assests/images/DPIAPIAManagementR11.jpg';
 import Img6 from '../assests/images/DPIAPIAManagementR12.jpg';
 import Img7 from '../assests/images/DPIAPIAManagementR17.jpg';
-import { connect } from 'react-redux'; gfgfgfgfgfgfgfgfg
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { browserHistory } from 'react-router';
 import axios from 'axios';

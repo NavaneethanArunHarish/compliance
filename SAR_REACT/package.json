@@ -6,7 +6,7 @@
     "axios": "^0.17.1",
     "chart.js": "^2.7.1",
     "glamor": "^2.20.40",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "paypal-checkout": "^4.0.175",
     "react": "^16.2.0",
     "react-bootstrap-table": "^4.3.1",
